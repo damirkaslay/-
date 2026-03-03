@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 3: Картинка-ссылка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .home-link {
+            display: inline-block;
+            margin: 20px 0;
+            transition: transform 0.3s;
+        }
+        .home-link:hover {
+            transform: scale(1.1);
+        }
+        .home-link img {
+            width: 150px;
+            height: 150px;
+            border: 3px solid #ddd;
+            border-radius: 10px;
+        }
+        .instruction {
+            font-size: 18px;
+            color: #555;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #e8f4fd;
+            border-radius: 5px;
+        }
+        .note {
+            color: #666;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .back-link {
+            display: block;
+            margin-top: 30px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏠 Картинка-ссылка</h1>
+        
+        <div class="instruction">
+            Нажми на кота, чтобы открыть Яндекс в новой вкладке
+        </div>
+        
+        <!-- Картинка обернута в тег <a> с target="_blank" -->
+        <a href="https://yandex.ru" target="_blank" class="home-link">
+            <img src="C:\Users\Programmer\Desktop\pract5-6\pract6\images\a1.jpg"
+                 alt="кот" 
+                 title="Перейти на Яндекс">
+        </a>
+        
+        <p class="note">
+            Ссылка откроется в новой вкладке благодаря атрибуту target="_blank"
+        </p>
+        
+        <a href="index.html" class="back-link">← На главную</a>
+    </div>
+</body>
+</html>

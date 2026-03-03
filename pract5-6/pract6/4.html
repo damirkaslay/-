@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 4: Карта изображений</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .image-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        .image-link {
+            text-align: center;
+        }
+        .image-link img {
+            width: 250px;
+            height: 200px;
+            border: 3px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .image-link img:hover {
+            transform: scale(1.05);
+            border-color: #0066cc;
+        }
+        .back-link {
+            display: block;
+            margin-top: 30px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Котики и собачки</h1>
+        <p>Нажми на картинку, чтобы узнать больше</p>
+        
+        <div class="image-links">
+            <!-- Картинка с котиком ведет на cat.html -->
+            <div class="image-link">
+                <a href="cat.html">
+                    <img src="C:\Users\Programmer\Desktop\pract5-6\pract6\images\a1.jpg" alt="Котик">
+                </a>
+                <p>Нажми на котика</p>
+            </div>
+            
+            <!-- Картинка с собачкой ведет на dog.html -->
+            <div class="image-link">
+                <a href="dog.html">
+                    <img src="C:\Users\Programmer\Desktop\pract5-6\pract6\images\a2.jpg" alt="Собачка">
+                </a>
+                <p>Нажми на собачку</p>
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-link">← Назад к списку заданий</a>
+    </div>
+</body>
+</html>

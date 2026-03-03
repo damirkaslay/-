@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 5: Энциклопедия фруктов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .fruit-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .fruit-item {
+            text-align: center;
+        }
+        .fruit-item img {
+            width: 150px;
+            height: 150px;
+            border: 3px solid #ddd;
+            border-radius: 50%;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .fruit-item img:hover {
+            transform: scale(1.1);
+            border-color: #ff6b6b;
+        }
+        .fruit-description {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Мои любимые фрукты</h1>
+        
+        <div class="fruit-gallery">
+            <!-- Яблоко - ссылка на apple.html -->
+            <div class="fruit-item">
+                <a href="apple.html">
+                    <img src="C:\Users\Programmer\Desktop\pract5-6\pract6\images\e1.avif" alt="Яблоко">
+                </a>
+                <p>Яблоко</p>
+            </div>
+            
+            <!-- Банан -->
+            <div class="fruit-item">
+                <img src="C:\Users\Programmer\Desktop\pract5-6\pract6\images\e2.avif" alt="Банан">
+                <p>Банан</p>
+            </div>
+            
+            <!-- Апельсин -->
+            <div class="fruit-item">
+                <img src="C:\Users\Programmer\Desktop\pract5-6\pract6\images\e5.jpg" alt="Апельсин">
+                <p>Апельсин</p>
+            </div>
+        </div>
+        
+        <div class="fruit-description">
+            <h3>Интересные факты:</h3>
+            <p> Яблоки бывают красные, зеленые и желтые</p>
+            <p> Бананы - отличный источник калия</p>
+            <p> Апельсины богаты витамином С</p>
+        </div>
+        
+        <a href="index.html" class="back-link">← Назад к списку заданий</a>
+    </div>
+</body>
+</html>

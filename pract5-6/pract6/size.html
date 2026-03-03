@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 2: Размеры изображений</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .image-block {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        img {
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+        .note {
+            color: #666;
+            font-style: italic;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Эксперименты с размерами</h1>
+        <p class="note">Используем одну и ту же картинку</p>
+        
+        <div class="image-block">
+            <h3>1. Оригинальный размер (без атрибутов):</h3>
+            <img src="C:\Users\Programmer\Desktop\pract5-6\pract6\images\a1.jpg" alt="Котик">
+        </div>
+        
+        <div class="image-block">
+            <h3>2. Ширина 300 пикселей:</h3>
+            <img src="C:\Users\Programmer\Desktop\pract5-6\pract6\images\a1.jpg" alt="Котик" width="300">
+            <p>Высота подстроилась автоматически</p>
+        </div>
+        
+        <div class="image-block">
+            <h3>3. Ширина 150 пикселей:</h3>
+            <img src="C:\Users\Programmer\Desktop\pract5-6\pract6\images\a1.jpg"" alt="Котик" width="150">
+            <p>Высота тоже уменьшилась пропорционально</p>
+        </div>
+        
+        <div class="image-block">
+            <h3>4. Эксперимент: ширина 200px, высота 200px:</h3>
+            <img src="C:\Users\Programmer\Desktop\pract5-6\pract6\images\a1.jpg" width="200" height="200">
+            <p>Картинка исказилась, потому что пропорции не соблюдены!</p>
+        </div>
+        
+        <a href="index.html" class="back-link">← На главную</a>
+    </div>
+</body>
+</html>
